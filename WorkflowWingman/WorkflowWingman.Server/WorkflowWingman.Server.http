@@ -1,0 +1,6 @@
+@WorkflowWingman.Server_HostAddress = http://localhost:5285
+
+GET {{WorkflowWingman.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
