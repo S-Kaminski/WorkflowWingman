@@ -1,9 +1,9 @@
 // firebase-config.ts
 export const firebaseConfig = {
-    apiKey: "AIzaSyCoBldMRcziu1mIjtBehQkNLNsWtIFdQTE",
-    authDomain: "workflowwingman-ce347.firebaseapp.com",
-    projectId: "workflowwingman-ce347",
-    storageBucket: "workflowwingman-ce347.appspot.com",
-    messagingSenderId: "565181614533",
-    appId: "1:565181614533:web:46d43c0b4603da13f0e3ac",
+    apiKey: 'your-api-key',
+    authDomain: 'your-auth-domain',
+    projectId: 'your-project-id',
+    storageBucket: 'your-storage-bucket',
+    messagingSenderId: 'your-messaging-sender-id',
+    appId: 'your-app-id',
   };
