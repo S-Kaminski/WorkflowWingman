@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WorkflowWingman.Server")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+71115c3cbcf2cfe5c6baba8381725ac3e37aed2d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8bc1dd5399f969909be79f505a53d60d281234b8")]
 [assembly: System.Reflection.AssemblyProductAttribute("WorkflowWingman.Server")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WorkflowWingman.Server")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

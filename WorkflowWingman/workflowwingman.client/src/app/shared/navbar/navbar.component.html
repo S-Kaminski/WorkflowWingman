@@ -1,0 +1,53 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #sidenav mode="side" opened>
+    <!-- Your sidebar content goes here -->
+    <div class="sidenav-content">
+      <a mat-button [routerLink]="'/accounts'"><mat-icon>settings</mat-icon>account_name</a>
+      <a mat-button [matMenuTriggerFor]="calendarMenu"><mat-icon>expand_more</mat-icon> Kalendarz</a>
+      <div>
+        <mat-menu #calendarMenu="matMenu">
+          <a mat-menu-item [routerLink]="'/calendar/owned'">Prywatny kalendarz</a>
+          <a mat-menu-item [routerLink]="'/calendar/shared'">Kalendarz ogólny</a>
+        </mat-menu>
+      </div>
+      
+      <a mat-button [matMenuTriggerFor]="tasksMenu"><mat-icon>expand_more</mat-icon> Zadania</a>
+      <div>
+        <mat-menu #tasksMenu="matMenu">
+          <a mat-menu-item [routerLink]="'/tasks'">Wszystkie zadania</a>
+          <a mat-menu-item [routerLink]="'/tasks/assigned'">Przypisane do mnie</a>
+        </mat-menu>
+      </div>
+
+      <a mat-button [matMenuTriggerFor]="reportMenu"><mat-icon>expand_more</mat-icon> Raporty</a>
+      <div>
+        <mat-menu #reportMenu="matMenu">
+          <a mat-menu-item [routerLink]="'/raports/create'">+ Stwórz raport</a>
+          <a mat-menu-item [routerLink]="'/raports/owned'">Moje raporty</a>
+          <a mat-menu-item [routerLink]="'/raports/all'">Wszystkie raporty</a>
+          <a mat-menu-item [routerLink]="'/raports/unassigned'">Wolne raporty</a>
+        </mat-menu>
+      </div>
+    </div>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <!-- Your toolbar content goes here -->
+    <mat-toolbar color="primary">
+      <button mat-icon-button (click)="sidenav.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <h1>Workflow Wingman </h1><mat-icon></mat-icon>
+      <a mat-button [routerLink]="'/logout'" class="logout-button"><mat-icon>logout</mat-icon> Wyloguj</a>
+      <span class="menu-spacer"></span>
+      
+    </mat-toolbar>
+
+
+    
+    <!-- Additional content, e.g., router-outlet for dynamic views -->
+    <div class="main-content">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

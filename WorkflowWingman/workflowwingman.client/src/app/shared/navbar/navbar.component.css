@@ -1,0 +1,30 @@
+/* Add this style to your global styles.css or in the component's style file */
+.sidenav-content {
+    display: inline-flex;
+    height: 100%;
+    width: 100%;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+  }
+  .mat-toolbar {
+    overflow:hidden;
+    display: flex;
+  justify-content: space-between;
+  }
+
+.mat-sidenav a {
+    padding: 12px;
+    text-decoration: none;
+  }
+
+.mat-drawer-content {
+    z-index: 1;
+    display: block;
+    height: 100%; 
+    overflow: hidden;
+}
+
+.logout-button {
+    margin-left: auto;
+  }
