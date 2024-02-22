@@ -84,3 +84,6 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+
+# Ignore Firebase configuration file
+firebase-config.ts
