@@ -16,6 +16,9 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatListModule} from '@angular/material/list';
 import {MatButtonModule} from '@angular/material/button';
 import {MatMenuModule} from '@angular/material/menu';
+import { AngularFireModule } from '@angular/fire/compat';
+import { FirestoreModule  } from '@angular/fire/firestore';
+import { firebaseConfig } from './firebase-config';
 
 @NgModule({
   declarations: [
@@ -25,6 +28,8 @@ import {MatMenuModule} from '@angular/material/menu';
   imports: [
     BrowserModule, HttpClientModule,
     AppRoutingModule,
+    AngularFireModule.initializeApp(firebaseConfig),    
+    FirestoreModule,
     MatSlideToggleModule,
     BrowserAnimationsModule,
     MatToolbarModule,
